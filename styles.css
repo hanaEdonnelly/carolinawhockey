@@ -1,0 +1,93 @@
+/* ------Fonts------ */
+@font-face {
+    font-family:'Berlingske Sans';
+    src:	url('https://sc.edu/_global_resources/fonts/BerlingskeSans-Md.woff2') format('woff2'),
+            url('https://sc.edu/_global_resources/fonts/BerlingskeSans-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family:'Berlingske Sans';
+    src:	url('https://sc.edu/_global_resources/fonts/BerlingskeSans-XBd.woff2') format('woff2'),
+            url('https://sc.edu/_global_resources/fonts/BerlingskeSans-XBd.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family:'Berlingske Sans Extracondensed';
+    src:	url('https://sc.edu/_global_resources/fonts/BerlingskeSansXCn-XBd.woff2') format('woff2'),
+            url('https://sc.edu/_global_resources/fonts/BerlingskeSansXCn-XBd.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family:'Berlingske Serif';
+    src:    url('https://sc.edu/_global_resources/fonts/BerlingskeSerif-Bd.woff2') format('woff2'),
+            url('https://sc.edu/_global_resources/fonts/BerlingskeSerif-Bd.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+/*------------ */
+
+html {
+    width: 100%;
+}
+
+body {
+    background-color: #73000a;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, p {
+    color: white;
+    font-family: "Berlingske Sans", "Arial";
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.75em;
+    font-family: "Berlingske Sans Extracondensed", "Impact", sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+button, .btn {
+    font-family: "Berlingske Sans", "Arial";
+    font-weight: bold;
+    padding: 1em;
+}
+
+button p {
+    color: #73000a;
+}
+
+#main {
+    width: 100%;
+}
+
+.btn {
+    border: 3px solid #73000a;
+    background-color: white;
+    color: #73000a;
+}
+
+.vertical-stacked {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.vertical-stacked > * {
+    justify-content: center;
+
+}
+
+footer p {
+    text-align: center;
+}
