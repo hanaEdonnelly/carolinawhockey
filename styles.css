@@ -33,7 +33,7 @@
 /*------------ */
 
 html {
-    width: 100%;
+    width: 100vw;
 }
 
 body {
@@ -58,6 +58,10 @@ h2 {
     font-size: 3em;
 }
 
+h3 {
+    font-size: 2em;
+}
+
 button, .btn {
     font-family: "Berlingske Sans", "Arial";
     font-weight: bold;
@@ -77,6 +81,13 @@ button p {
     border: 3px solid #73000a;
     background-color: white;
     color: #73000a;
+    border-radius: 8px;
+}
+
+.btn:active {
+    border: 3px solid #fff;
+    background-color: #73000a;
+    color: #fff;
 }
 
 .vertical-stacked {
@@ -91,6 +102,49 @@ button p {
 
 }
 
+.panel {
+    width: 90%;
+    padding: 1em 0;
+    margin: 2em auto;
+    background-color: white;
+    color: #73000a;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.panel h2, .panel h3 {
+    color: #73000a;
+}
+
+.panel img {
+    width: 20em;
+}
+
 footer p {
     text-align: center;
+}
+
+/*------Media Queries------*/
+@media only screen and (min-width: 1024px) {
+    h1 {
+        text-align: left;
+    }
+
+    .vertical-stacked {
+        flex-direction: row;
+        flex: 1 0 0; /*Confirm*/
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button, .btn {
+        font-size: 1.5em;
+    }
 }
